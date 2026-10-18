@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Riatrade | Ремонт на покриви в София и цялата страна</title>
-<meta name="description" content="Riatrade извършва ремонт на покриви, хидроизолация, нови покривни конструкции, улуци и тенекеджийски услуги. Безплатен оглед, без авансово плащане, гаранция до 15 години.">
+<meta name="description" content="Riatrade извършва ремонт на покриви, хидроизолация, нови покривни конструкции, улуци и тенекеджийски услуги. Безплатен оглед, без авансово плащане, гаранция от 10 до 15 години.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -91,6 +91,17 @@ nav.main a:hover{background:var(--sand)}
 @media(max-width:1020px){.house{display:none}}
 @media(prefers-reduced-motion:reduce){.house .d{animation:none;stroke-dashoffset:0}.house .float{animation:none}}
 .hero svg.mount{position:absolute;left:0;right:0;bottom:0;width:100%;height:150px;z-index:2}
+
+
+.hero p.sub{max-width:660px;font-size:17px}
+.hero p.sub a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.45);text-underline-offset:3px;font-weight:600}
+.hero p.sub a:hover{text-decoration-color:#fff}
+.hl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px;max-width:980px}
+.hl div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);border-left:4px solid #FF4B45;border-radius:14px;padding:14px 16px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hl b{display:block;font-size:15px;line-height:1.3;text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.hl span{display:block;font-size:12.5px;color:#FFD9D5;margin-top:4px}
+@media(max-width:1020px){.hl{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.hl{grid-template-columns:1fr}}
 
 /* estimator */
 .search{position:relative;margin-top:-72px;z-index:5}
@@ -355,13 +366,16 @@ footer .wordmark small{color:#8D8982}
   </div>
   <div class="wrap reveal">
     <h1>Покрив, на който можете да <em>разчитате</em></h1>
-    <p class="sub">Семейна фирма с опит от 1980 година. Ремонт на покриви, хидроизолация, нови покривни конструкции, улуци и тенекеджийски услуги. Започваме без авансово плащане.</p>
+    <p class="sub">Фирма <a href="#za-nas">Riatrade</a> се занимава с <a href="#uslugi">ремонт на покриви</a> от всякакъв вид в София и цялата страна: изграждане на <a href="#umeem">нови покриви</a>, <a href="#etapi">хидроизолация на покриви</a>, <a href="#uslugi">поставяне на улуци</a>, битумни керемиди и асфалтиране, изкопни работи, направа на огради, груб строеж, от А до Я, строителство до ключ.</p>
     <div class="cta">
       <a class="btn" href="#kontakti">Заявете безплатен оглед</a>
       <a class="btn ghost" href="tel:+359889349766">Обадете се сега</a>
     </div>
-    <div class="badges">
-      <span class="badge">Безплатен оглед</span><span class="badge">Без аванс</span><span class="badge">20% отстъпка за нови клиенти</span><span class="badge">Гаранция до 15 години</span>
+    <div class="hl">
+      <div><b>Ремонт на покриви</b><span>на територията на цялата страна</span></div>
+      <div><b>Започваме без авансово плащане</b><span>плащате след свършена работа</span></div>
+      <div><b>Отстъпка 20%</b><span>за нови клиенти</span></div>
+      <div><b>Гаранция от 10 до 15 години</b><span>писмено, при сключване на договор</span></div>
     </div>
   </div>
   <svg class="mount" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">
