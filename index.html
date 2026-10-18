@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Riatrade | Ремонт на покриви в София и цялата страна</title>
+<title>Ремонт на покриви в София и цялата страна | Riatrade</title>
 <meta name="description" content="Riatrade извършва ремонт на покриви, хидроизолация, нови покривни конструкции, улуци и тенекеджийски услуги. Безплатен оглед, без авансово плащане, гаранция от 10 до 15 години.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,12 +58,12 @@ section{padding:76px 0}
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
 .brand{display:flex;align-items:center;gap:11px}
-.lmark{width:44px;height:44px;flex:none;transition:transform .6s}
+.lmark{width:50px;height:50px;flex:none;transition:transform .6s}
 .brand:hover .lmark{transform:rotate(-6deg) scale(1.06)}
 .wordmark{display:flex;flex-direction:column;line-height:1}
-.wordmark b{font-weight:800;font-size:24px;letter-spacing:-.03em;color:var(--ink)}
+.wordmark b{font-weight:800;font-size:22px;letter-spacing:.005em;color:var(--ink);white-space:nowrap;line-height:1}
 .wordmark b i{color:var(--accent);font-style:normal}
-.wordmark small{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:5px;font-weight:700}
+.wordmark small{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-top:5px;font-weight:700}
 nav.main{display:flex;gap:4px;align-items:center}
 nav.main a{padding:8px 12px;border-radius:10px;font-weight:600;font-size:14.5px;color:var(--ink)}
 nav.main a:hover{background:var(--sand)}
@@ -207,11 +207,10 @@ nav.main a:hover{background:var(--sand)}
 .group li:before{content:"";position:absolute;left:0;top:13px;width:9px;height:9px;border-radius:2px;background:var(--accent)}
 .acc{max-width:820px;margin-top:26px;display:grid;gap:10px}
 .acc details{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:0 20px}
-.acc summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:800;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.acc summary{cursor:default;pointer-events:none;list-style:none;padding:16px 0;font-weight:800;font-size:16px;display:flex;justify-content:space-between;align-items:center}
 .acc summary::-webkit-details-marker{display:none}
-.acc summary:after{content:"+";color:var(--accent);font-size:24px;font-weight:700;line-height:1}
-.acc details[open] summary:after{content:"\2212"}
-.acc details[open]{border-color:var(--accent)}
+.acc summary:after{display:none}
+.acc details{border-left:4px solid var(--accent)}
 .acc ol{padding:0 0 16px 22px;color:var(--muted);font-size:14.5px}
 .acc li{padding:3px 0}
 @media(max-width:1020px){.groups{grid-template-columns:1fr}}
@@ -301,8 +300,8 @@ footer .wordmark small{color:#8D8982}
   header.site .wrap{height:64px}
   header.site .btn{display:none}
   nav.main{top:64px}
-  .wordmark b{font-size:21px}
-  .lmark{width:38px;height:38px}
+  .wordmark b{font-size:16.5px}
+  .lmark{width:42px;height:42px}
   .hero h1{font-size:33px}
   .hero p.sub{font-size:16px}
   .cta .btn{flex:1 1 100%;justify-content:center}
@@ -334,7 +333,7 @@ footer .wordmark small{color:#8D8982}
       <path d="M19 33 V48 H45 V33" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M28 48 V39 H36 V48" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="2.6" stroke-linejoin="round"/>
     </svg>
-    <span class="wordmark"><b>Ria<i>trade</i></b><small>Покривни услуги</small></span>
+    <span class="wordmark"><b>РЕМОНТ НА <i>ПОКРИВИ</i></b><small>Riatrade</small></span>
   </a>
   <nav class="main" id="nav">
     <a href="#top">Начало</a>
@@ -365,7 +364,7 @@ footer .wordmark small{color:#8D8982}
     </svg>
   </div>
   <div class="wrap reveal">
-    <h1>Покрив, на който можете да <em>разчитате</em></h1>
+    <h1>Ремонт на покриви, на който можете да <em>разчитате</em></h1>
     <p class="sub">Фирма <a href="#za-nas">Riatrade</a> се занимава с <a href="#uslugi">ремонт на покриви</a> от всякакъв вид в София и цялата страна: изграждане на <a href="#umeem">нови покриви</a>, <a href="#etapi">хидроизолация на покриви</a>, <a href="#uslugi">поставяне на улуци</a>, битумни керемиди и асфалтиране, изкопни работи, направа на огради, груб строеж, от А до Я, строителство до ключ.</p>
     <div class="cta">
       <a class="btn" href="#kontakti">Заявете безплатен оглед</a>
@@ -434,25 +433,6 @@ footer .wordmark small{color:#8D8982}
   </div>
 </div></section>
 
-<section id="etapi" style="padding-top:0"><div class="wrap">
-  <div class="eyebrow">Етапи на работа</div>
-  <h2>Какво включва всяка услуга</h2>
-  <div class="acc reveal">
-    <details open><summary>Ремонт на покриви с керемиди</summary><ol>
-      <li>Разкриване на покрива</li><li>Почистване на кал</li><li>Полагане на подкеремидна мушама</li><li>Наковаване на летви</li><li>Нареждане на керемиди</li><li>Измазване на капаци с вароциментов разтвор</li></ol></details>
-    <details><summary>Хидроизолация</summary><ol>
-      <li>Почистване на покрива</li><li>Поправка на подпокривни изви</li><li>Полагане на усилен воалит с посипка</li><li>Залепване с газопламъчен огън</li></ol></details>
-    <details><summary>Покриви, нова конструкция</summary><ol>
-      <li>Демонтаж на съществуващата конструкция</li><li>Изграждане на нова конструкция</li></ol></details>
-    <details><summary>Улуци и водосточни тръби</summary><ol>
-      <li>Хоризонтални улуци</li><li>Водосточни тръби</li><li>Американски безшевни улуци</li><li>Казанче по желание на клиента</li></ol></details>
-    <details><summary>Тенекеджийски услуги</summary><ol>
-      <li>Подмяна на капандури</li><li>Обшиване на комини</li><li>Обшиване на бордове</li><li>Подулучни и надулучни поли</li></ol></details>
-    <details><summary>Надстройка на таванска стая</summary><ol>
-      <li>Разкриване и почистване на старата конструкция</li><li>Надзид на постройката</li><li>Полагане на греди и наковаване на дъсчена ламперия</li></ol></details>
-  </div>
-  <p class="note">Цената за всички услуги е по договаряне след безплатния оглед на обекта. Помним, че пренебрегването на ремонта в началната фаза на проблема е основна причина за големи и постоянни щети по покрива, затова не отлагайте огледа.</p>
-</div></section>
 
 <section id="proekti" style="padding-top:20px"><div class="wrap">
   <div class="eyebrow">Реализирани проекти</div>
@@ -584,12 +564,32 @@ footer .wordmark small{color:#8D8982}
     </form>
   </div>
 </div></section>
+
+<section id="etapi"><div class="wrap">
+  <div class="eyebrow">Етапи на работа</div>
+  <h2>Какво включва всяка услуга</h2>
+  <div class="acc reveal">
+    <details open><summary>Ремонт на покриви с керемиди</summary><ol>
+      <li>Разкриване на покрива</li><li>Почистване на кал</li><li>Полагане на подкеремидна мушама</li><li>Наковаване на летви</li><li>Нареждане на керемиди</li><li>Измазване на капаци с вароциментов разтвор</li></ol></details>
+    <details open><summary>Хидроизолация</summary><ol>
+      <li>Почистване на покрива</li><li>Поправка на подпокривни изви</li><li>Полагане на усилен воалит с посипка</li><li>Залепване с газопламъчен огън</li></ol></details>
+    <details open><summary>Покриви, нова конструкция</summary><ol>
+      <li>Демонтаж на съществуващата конструкция</li><li>Изграждане на нова конструкция</li></ol></details>
+    <details open><summary>Улуци и водосточни тръби</summary><ol>
+      <li>Хоризонтални улуци</li><li>Водосточни тръби</li><li>Американски безшевни улуци</li><li>Казанче по желание на клиента</li></ol></details>
+    <details open><summary>Тенекеджийски услуги</summary><ol>
+      <li>Подмяна на капандури</li><li>Обшиване на комини</li><li>Обшиване на бордове</li><li>Подулучни и надулучни поли</li></ol></details>
+    <details open><summary>Надстройка на таванска стая</summary><ol>
+      <li>Разкриване и почистване на старата конструкция</li><li>Надзид на постройката</li><li>Полагане на греди и наковаване на дъсчена ламперия</li></ol></details>
+  </div>
+  <p class="note">Цената за всички услуги е по договаряне след безплатния оглед на обекта. Помним, че пренебрегването на ремонта в началната фаза на проблема е основна причина за големи и постоянни щети по покрива, затова не отлагайте огледа.</p>
+</div></section>
 </main>
 
 <footer><div class="wrap">
   <div class="fg">
     <div>
-      <div class="brand" style="margin-bottom:14px"><span class="wordmark"><b>Ria<i>trade</i></b><small>Покривни услуги</small></span></div>
+      <div class="brand" style="margin-bottom:14px"><span class="wordmark"><b>РЕМОНТ НА <i>ПОКРИВИ</i></b><small>Riatrade</small></span></div>
       <p>Riatrade: ремонт на покриви, хидроизолация, нови покривни конструкции, улуци и тенекеджийски услуги в София и цялата страна.</p>
     </div>
     <div><h4>Услуги</h4><ul id="ftList"></ul></div>
@@ -677,6 +677,7 @@ $("#burger").onclick=()=>$("#nav").classList.toggle("show");
 $$("#nav a").forEach(a=>a.onclick=()=>$("#nav").classList.remove("show"));
 setTimeout(()=>{ $("#callTip").style.display="block"; setTimeout(()=>$("#callTip").style.display="none",7000); },6000);
 
+$$(".acc details").forEach(d=>{d.open=true;d.addEventListener("toggle",()=>{if(!d.open)d.open=true;});});
 /* reveal + броячи */
 const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }),{threshold:.1});
 $$(".reveal").forEach(el=>io.observe(el));
