@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riatrade.hackera.online/sitemap.xml
